@@ -27,7 +27,7 @@ const Cart = (props) => {
            <h1> <b>This is Cart</b></h1>
            <p>Items ordered : {cart.length}</p>
            <p>Product Price : {NumberError(total)}</p>
-           <p>Shipping:{shipping}</p>
+           <p>Shipping Cost:       {shipping}</p>
            <p>Tax and Vat :{tax}</p>
            <p>Total price : {grandTotal}</p>
      
