@@ -13,7 +13,7 @@ const Product = (props) => {
                 <img src={img}/>
                 </div>
             <div >
-                <h1 className='product-name'> <Link to={"/Product/"+key}>{name}</Link></h1>
+                <h1 className='product-name'> <Link to={"/"+key}>{name}</Link></h1>
                <br/>
                <p><small>by : {seller}</small></p><br/>
 
@@ -21,7 +21,9 @@ const Product = (props) => {
                <br/>
                <p><small>Only {stock} left in the stock- order soon</small></p>
                <br/>
-               <button onClick={()=>props.handleAddProduct(props.product)} className='button'   >  <FontAwesomeIcon icon={faShoppingCart} />    Add me</button>
+
+              {props.HandleClick === true && <button className='button' onClick={()=>props.handleAddProduct(props.product) }   >  <FontAwesomeIcon icon={faShoppingCart} />  Add me  
+              </button>}
 
 
 

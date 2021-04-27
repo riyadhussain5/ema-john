@@ -27,14 +27,16 @@ function App() {
          
           </Route>
           <Route path="/manage inventory">
-            <Manage></Manage>
+          <Manage></Manage>
           </Route>
-          <Route exact path="/"></Route>
+          <Route exact path="/">
+          <Shop></Shop>
+          </Route>
           <Route path="/:productKey">
-  <ProductInfo></ProductInfo>
-</Route>
+          <ProductInfo></ProductInfo>
+          </Route>
           <Route path="/*">
-            <Notmatching></Notmatching>
+          <Notmatching></Notmatching>
           </Route>
 
         </Switch>
